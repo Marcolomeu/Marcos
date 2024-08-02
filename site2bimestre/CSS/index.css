@@ -1,0 +1,19 @@
+h1{
+    color: black;
+    margin: 0%;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 90%;
+}
+
+input{
+    width: 20%;
+}
