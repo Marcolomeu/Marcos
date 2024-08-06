@@ -1,7 +1,17 @@
+:root{
+    --cor--principal: white;
+    --cor--segundaria: pink;
+
+}
 h1{
     color: black;
     margin: 0%;
 }
+
+p{
+    margin-top: 10px;
+}
+
 
 div{
     display: flex;
@@ -11,9 +21,24 @@ div{
 }
 
 img{
-    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 500px;
+    min-height: 90%;
 }
 
 input{
-    width: 20%;
+    max-width: 50%;
+    min-width: 10%;
+    max-height: 50px;
+    min-height: 90%;
+}
+
+button{
+    margin-top: 5px;  
+}
+
+#button{
+    background-color: pink;
+    color: white;
 }
