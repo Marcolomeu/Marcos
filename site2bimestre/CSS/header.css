@@ -1,0 +1,13 @@
+:root{
+    --cor--principal: #ffffff;
+    --cor--segundaria: #ffc0cb;
+}
+
+#ElementosHeader{
+    display: flex;
+    justify-content: space-around;
+}
+
+#historico{
+    color: black;
+}

@@ -1,7 +1,6 @@
 :root{
     --cor--principal: #ffffff;
     --cor--segundaria: #ffc0cb;
-
 }
 h1{
     color: black;
@@ -39,6 +38,6 @@ button{
 }
 
 #button{
-    background-color: #ffc0cb;
-    color: #ffffff;
+    background-color: var(--cor--segundaria);
+    color: var(--cor--principal);
 }
