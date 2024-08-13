@@ -1,6 +1,6 @@
 :root{
-    --cor--principal: white;
-    --cor--segundaria: pink;
+    --cor--principal: #ffffff;
+    --cor--segundaria: #ffc0cb;
 
 }
 h1{
@@ -21,10 +21,10 @@ div{
 }
 
 img{
-    max-width: 40%;
-    min-width: 40%;
-    max-height: 40%;
-    min-height: 40%;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
 }
 
 input{
@@ -39,6 +39,6 @@ button{
 }
 
 #button{
-    background-color: pink;
-    color: white;
+    background-color: #ffc0cb;
+    color: #ffffff;
 }
