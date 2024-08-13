@@ -3,6 +3,10 @@
     --cor--segundaria: #ffc0cb;
 }
 
+header{
+    background-color: aquamarine;
+}
+
 #ElementosHeader{
     display: flex;
     justify-content: space-around;
@@ -10,4 +14,9 @@
 
 #historico{
     color: black;
+    max-width: 40px;
+}
+
+#ImagemHeader{
+    max-width: 25px;
 }
