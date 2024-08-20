@@ -1,0 +1,35 @@
+:root{
+    --cor--principal: #ffffff;
+    --cor--segundaria: #D9D9D9;
+}
+
+p{
+    font-size: 100px;
+    font-weight: bold
+}
+
+#centralizar{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#pontuacao{
+    background-color: var(--cor--segundaria);
+    margin-top: 5%;
+    padding: 7% 20%;
+    border: #D9D9D9 solid;
+    border-radius: 5px;
+
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor--segundaria);
+    margin-top: 5px;
+    border: #D9D9D9 solid;
+    border-radius: 5px;
+}
