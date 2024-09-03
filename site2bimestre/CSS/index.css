@@ -1,43 +1,65 @@
 :root{
-    --cor--principal: #ffffff;
-    --cor--segundaria: #D9D9D9;
-}
-h1{
-    color: black;
-    margin: 0%;
+    --cor--principal: rgba(218, 218, 4, 0.726);
+    --cor-segundaria: blue;
+    --cor-terciaria: white;
 }
 
-p{
-    margin-top: 10px;
-}
-
-
-div{
+#imagem{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    background-color: var(--cor--principal);
+}
+#Bio{
+    margin-top: 20px;
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;flex-direction: column;
+    align-items: center;
 }
 
-img{
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 200px;
-    min-height: 200px;
+#Informaçõespessoais{
+        margin-top: 20px;
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;flex-direction: column;
+    align-items: center;
 }
 
-input{
-    max-width: 50%;
-    min-width: 10%;
-    max-height: 50px;
-    min-height: 90%;
+h1{
+    font-size: 300%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-button{
-    margin-top: 5px;  
+h2{
+    font-size: 150%;
+    margin-top: 4%;
 }
 
-#button{
-    background-color: var(--cor--segundaria);
-    color: var(--cor--principal);
+p{
+    font-size: 120%;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    margin: 5%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+width: 30%;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
