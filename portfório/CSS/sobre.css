@@ -2,3 +2,50 @@
     --cor-principal: #00193F;
     --cor-segundaria: white;
 }
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#primeira{
+    background-color: var(--cor-principal)
+}
+
+#segunda{
+    background-color: var(--cor-segundaria);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: flex-start;
+}
+
+#terceira{
+    background-color: var(--cor-principal);
+}
+
+h2{
+    font-size: 25px;
+    margin-top: 8vh;
+    margin-bottom: 8px;
+}
+
+p{
+    font-size: 100%;
+    margin-top: 5px;
+    font-weight:bold ;
+}
+
+.arrumarFilmes{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    max-width: 10%;
+    margin-bottom: 5px;
+}
