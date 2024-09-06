@@ -3,7 +3,7 @@
     --cor-segundaria: white;
 }
 
-section{
+body{
     background-color: var(--cor-principal);
 }
 
