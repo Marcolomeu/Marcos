@@ -30,6 +30,10 @@ section{
     width: 100%;
 }
 
+#livros{
+    color: var(--cor-segundaria);
+}
+
 h2{
     font-size: 25px;
     margin-top: 8vh;
@@ -40,6 +44,12 @@ p{
     font-size: 100%;
     margin-top: 5px;
     font-weight:bold ;
+    color: var(--cor-segundaria);
+}
+
+.preto{
+    color: black;
+    font-size: 120%;
 }
 
 .arrumarFilmes{
@@ -54,10 +64,9 @@ img{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 40%;
-    margin: 5%;
+    width: 35%;
+    background-color: var(--cor-segundaria);
 }
-
 td, th {
 border: 1px solid #dddddd;
 text-align: left;

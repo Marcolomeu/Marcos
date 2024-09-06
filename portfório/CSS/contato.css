@@ -1,0 +1,9 @@
+:root{
+    --cor-principal: #00193F;
+    --cor-segundaria: white;
+}
+
+section{
+    background-color: var(--cor-principal);
+}
+
