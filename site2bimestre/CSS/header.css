@@ -1,15 +1,37 @@
-:root{
-    --cor--principal: #ffffff;
-    --cor--segundaria: #D9D9D9;
+.header {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 10vh; /* Ajuste a altura conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-header{
-    background-color: var(--cor--segundaria);
+.navbar {
+    width: 100%;
 }
 
-#ElementosHeader{
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #00eeff;
 }

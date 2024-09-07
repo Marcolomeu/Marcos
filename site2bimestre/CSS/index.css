@@ -1,64 +1,83 @@
-:root{
-    --cor-principal: rgb(255, 255, 0);
-    --cor-segundaria: blue;
-    --cor-terciaria: white;
+:root {
+    --cor-principal: #2E3634;
+    --cor-segundaria: #42615A;
+    --cor-terciaria: #488B7C;
+    --cor-quadriaria: #3FB69A;
 }
 
-#imagem{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--cor-segundaria);
-}
-#Bio{
-    margin-top: 20px;
-    background-color: var(--cor-terciaria);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;flex-direction: column;
-    align-items: center;
+h1 {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#Informaçõesprofissionais{
-    margin-top: 20px;
-    background-color: var(--cor-terciaria);
+.principais {
+    background-color: var(--cor-principal); /* Cor de fundo da section */
+    height: 100vh; /* Preenche a altura total da viewport */
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-h1{
-    font-size: 300%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.bonecos {
+    background-color: var(--cor-quadriaria); /* Cor de fundo da div verde */
+    width: 30vw;  /* 30% da largura da viewport */
+    height: 50vh; /* 50% da altura da viewport */
+    max-width: 100%; /* Impede que a largura ultrapasse 100% do container */
+    max-height: 100%; /* Impede que a altura ultrapasse 100% do container */
+    padding: 2rem; /* Espaçamento interno em unidades relativas */
+}
+
+img {
+    margin-bottom: 10px;
+    max-width: 30%; /* Define a largura máxima da imagem */
 }
 
 h2{
-    font-size: 150%;
-    margin-top: 4%;
+    font-size: 30px;
+}
+#cabeca {
+    background-color: var(--cor-segundaria);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Espaço entre o texto e a imagem */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    flex-direction: column;
 }
 
-p{
-    font-size: 120%;
+#cabeca h2, #cabeca p {
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 40%;
-    margin: 5%;
+#cabeca img {
+    max-width: 30%; /* Ajuste a largura da imagem */
 }
 
-td, th {
-border: 1px solid #dddddd;
-text-align: left;
-padding: 8px;
-width: 30%;
+#variedade{
+    background-color: var(--cor-terciaria);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Espaço entre o texto e a imagem */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    flex-direction: column;
 }
 
-tr:nth-child(even) {
-background-color: #dddddd;
+#material{
+    background-color: var(--cor-principal);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Espaço entre o texto e a imagem */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    flex-direction: column;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
