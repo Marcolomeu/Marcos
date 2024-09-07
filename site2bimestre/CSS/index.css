@@ -55,7 +55,7 @@ h2{
 }
 
 #variedade{
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-principal);
     color: rgb(0, 0, 0);
     font-size: 20px;
     display: flex;

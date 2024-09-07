@@ -1,0 +1,21 @@
+img{
+    height: 60vh;
+}
+body{
+    background-color:#2E3634 ;
+}
+
+div{
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10vh;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+}
