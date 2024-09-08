@@ -43,7 +43,7 @@ button:hover {
     background-color: #000000;
 }
 
-div{
+.aoba{
     display: flex;
     justify-content: center;
     align-items: center;
