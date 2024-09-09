@@ -36,7 +36,7 @@ h2{
     font-size: 30px;
 }
 #cabeca {
-    background-color: var(--cor-segundaria);
+    background-color: var(--cor-principal);
     color: rgb(0, 0, 0);
     font-size: 20px;
     display: flex;
