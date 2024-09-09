@@ -2,7 +2,6 @@
     --cor-principal: #00193F;
     --cor-segundaria: white;
 }
-
 section{
     display: flex;
     justify-content: center;
