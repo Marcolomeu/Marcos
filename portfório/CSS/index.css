@@ -2,13 +2,30 @@ body{
     background-image: linear-gradient(to left, white, blue,black);
     background-position: center;
     background-size: cover;
+    flex-grow: 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
 }
 
 img{
+    margin: auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+}
+
+#footer-index{
     width: 100%;
 }
