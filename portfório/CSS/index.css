@@ -1,5 +1,5 @@
 body{
-    background-image: url(../IMG/Fundo.jpeg);
+    background-image: linear-gradient(to left, white, blue,black);
     background-position: center;
     background-size: cover;
 }
