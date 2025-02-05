@@ -1,51 +1,46 @@
 .header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
-background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    height: 10vh;
 }
 
 .menu {
-list-style: none;
-display: flex;
+    list-style: none;
+    display: flex;
 }
 
 .menu li {
-margin-right: 20px;
-position: relative;
+    margin-right: 20px;
+    position: relative;
 }
 
 .menu li a {
-text-decoration: none;
-color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 .menu li:hover .submenu {
-display: block;
+    display: block;
 }
 
 .submenu {
-display: none;
-position: absolute;
-top: 100%;
-left: 0;
-list-style: none;
-background-color: #f8f8f8;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-padding: 10px 0;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
 
 .submenu li {
-margin-right: 0;
+    margin-right: 0;
 }
 
 .submenu li a {
-padding: 10px 20px;
-display: block;
+    padding: 10px 20px;
+    display: block;
 }
 
-.contactNumber {
-font-size: 14px;
-color: #999;
-}
