@@ -1,5 +1,13 @@
-import Header from '../components/header/header.js'
+// src/app/pages/page.js
+import React from 'react';
+import Header from '../components/header/header.js';
 
-export default function Home() {
+function Page() {
+  return (
+    <div>
 
+    </div>
+  );
 }
+
+export default Page;

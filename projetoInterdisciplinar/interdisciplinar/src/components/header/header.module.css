@@ -1,0 +1,51 @@
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: #f8f8f8;
+}
+
+.menu {
+list-style: none;
+display: flex;
+}
+
+.menu li {
+margin-right: 20px;
+position: relative;
+}
+
+.menu li a {
+text-decoration: none;
+color: #333;
+}
+
+.menu li:hover .submenu {
+display: block;
+}
+
+.submenu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+list-style: none;
+background-color: #f8f8f8;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 10px 0;
+}
+
+.submenu li {
+margin-right: 0;
+}
+
+.submenu li a {
+padding: 10px 20px;
+display: block;
+}
+
+.contactNumber {
+font-size: 14px;
+color: #999;
+}
