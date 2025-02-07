@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import styles from './header.module.css';
 
-const Header = () => {
+export default function Header() {
     return (
         <header className={styles.header}>
             <Image
@@ -13,11 +13,11 @@ const Header = () => {
             />
             <nav>
                 <ul className={styles.menu}>
-                    <li><a href="#home">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li>
                         <a href="#médicos">MÉDICOS</a>
                         <ul className={styles.submenu}>
-                            <li><a href="#Listar">Listar</a></li>
+                            <li><a href="/medicos">Listar</a></li>
                             <li><a href="#Adicionar">Adicionar</a></li>
                             <li><a href="#Editar">Editar</a></li>
                             <li><a href="#Excluir">Excluir</a></li>
@@ -44,7 +44,5 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
-  );
+    );
 }
-
-export default Header;
