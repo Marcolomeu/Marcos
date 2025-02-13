@@ -1,7 +1,9 @@
 import Header from '../components/header/header.js';
+'use client';
 import React, {useState, useEffect} from 'react';
 
 export default function listarMedicos() {
+
     const [medicos, setMedicos] = useState([])
     const [medicosSelecionados, setMedicoselecionados] = useState('')
 
@@ -22,7 +24,7 @@ export default function listarMedicos() {
 
     useEffect(() => {
         getMedicos();
-    }, [])
+    }, [medicosSelecionados])
 
     return(
         <table>
@@ -36,3 +38,4 @@ export default function listarMedicos() {
         </table>    
     )
 }
+
