@@ -29,7 +29,7 @@ export default function listarMedicos() {
 
     return(
         <table className={styles.table}>
-            <thead>
+            <thead className={styles.elementoTabela}>
                 <tr className={styles.tituloTable}>
                     <th>ID</th>
                     <th>NOME</th>
@@ -38,7 +38,7 @@ export default function listarMedicos() {
                     <th>ESPECIALIDADE</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className={styles.elementoTabela}>
                 {medicos.map((medico) => (
                     <tr key={medico.id}>
                         <td>{medico.id}</td>
