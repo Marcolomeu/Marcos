@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import Link from 'next/link'; 
 import styles from './header.module.css';
 
 export default function Header() {
@@ -13,32 +14,32 @@ export default function Header() {
             />
             <nav>
                 <ul className={styles.menu}>
-                    <li><a href="/">HOME</a></li>
+                    <li><Link href="/">HOME</Link></li>
                     <li>
-                        <a href="#médicos">MÉDICOS</a>
+                        <Link href="/medicos">MÉDICOS</Link>
                         <ul className={styles.submenu}>
-                            <li><a href="/medicos">Listar</a></li>
-                            <li><a href="#Adicionar">Adicionar</a></li>
-                            <li><a href="#Editar">Editar</a></li>
-                            <li><a href="#Excluir">Excluir</a></li>
+                            <li><Link href="/medicos">Listar</Link></li>
+                            <li><Link href="#Adicionar">Adicionar</Link></li>
+                            <li><Link href="#Editar">Editar</Link></li>
+                            <li><Link href="#Excluir">Excluir</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <a href='#pacientes'>PACIENTES</a>
-                        <ul className= {styles.submenu}>
-                            <li><a href='#Listar'>Listar</a></li>
-                            <li><a href='#Adicionar'>Adicionar</a></li>
-                            <li><a href='#Editar'>Editar</a></li>
-                            <li><a href='#Excluir'>Excluir</a></li>
+                        <Link href='#pacientes'>PACIENTES</Link>
+                        <ul className={styles.submenu}>
+                            <li><Link href='#Listar'>Listar</Link></li>
+                            <li><Link href='#Adicionar'>Adicionar</Link></li>
+                            <li><Link href='#Editar'>Editar</Link></li>
+                            <li><Link href='#Excluir'>Excluir</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <a href='#agendamento'>AGENDAMENTO</a>
+                        <Link href='#agendamento'>AGENDAMENTO</Link>
                         <ul className={styles.submenu}>
-                            <li><a href='#Listar'>Listar Consultas</a></li>
-                            <li><a href='#Adicionar'>Agendar Consulta</a></li>
-                            <li><a href='#Editar'>Editar Agendamento</a></li>
-                            <li><a href='#Excluir'>Cancelar</a></li>
+                            <li><Link href='#Listar'>Listar Consultas</Link></li>
+                            <li><Link href='#Adicionar'>Agendar Consulta</Link></li>
+                            <li><Link href='#Editar'>Editar Agendamento</Link></li>
+                            <li><Link href='#Excluir'>Cancelar</Link></li>
                         </ul>
                     </li>
                 </ul>
