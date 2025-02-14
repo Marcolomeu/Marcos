@@ -1,0 +1,10 @@
+.tituloTable{
+    color: black;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

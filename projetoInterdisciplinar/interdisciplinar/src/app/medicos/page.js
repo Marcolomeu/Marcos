@@ -1,6 +1,7 @@
-import Header from '@/components/header/header.js';
 'use client';
+import Header from '@/components/header/header.js';
 import React, {useState, useEffect} from 'react';
+import styles from '@/app/medicos/page.module.css'
 
 export default function listarMedicos() {
 
@@ -27,9 +28,9 @@ export default function listarMedicos() {
     }, [medicosSelecionados])
 
     return(
-        <table>
+        <table className={styles.table}>
             <thead>
-                <tr>
+                <tr className={styles.tituloTable}>
                     <th>ID</th>
                     <th>NOME</th>
                     <th>TELEFONE</th>
@@ -48,7 +49,6 @@ export default function listarMedicos() {
                     </tr>
                 ))}
             </tbody>
-        </table>    
+        </table>      
     )
 }
-
