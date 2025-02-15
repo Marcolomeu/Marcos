@@ -1,24 +1,42 @@
-.tituloTable{
-    color: black;
+@keyframes changeColor {
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #004887;
+    }
 }
 
-.table{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.elementoTabela tr:hover td{
+    animation: changeColor 0.7s forwards;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table {
     width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10vh;
 }
 
-.elementoTabela{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.elementoTabela th{
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+.elementoTabela td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+    color: #000000;
 }
 
-.elementoTabela *{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.tituloTable {
+    background-color: #000000;
+    font-weight: bold;
 }
