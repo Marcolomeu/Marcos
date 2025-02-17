@@ -8,6 +8,7 @@ export default function listarMedicos() {
     const [medicos, setMedicos] = useState([])
     const [medicosSelecionados, setMedicoselecionados] = useState('')
     const [busca, setBusca] = useState('')
+    const [mostrarInput, setMostrarInput] = useState(false)
 
     const getMedicos = async () => {
         try {
@@ -34,13 +35,20 @@ export default function listarMedicos() {
 
     return(
         <div>
-            <div className={styles.inputContainer}>
-                <input 
-                    value={busca}
-                    type="text" 
-                    onChange={(ev) => setBusca(ev.target.value)}
-                    placeholder="Buscar médico pelo nome"
-                />
+            <div className={styles.controls}>
+                <button onClick={() => setMostrarInput(!mostrarInput)}>
+                    {mostrarInput ? 'Ocultar Campo de Busca' : 'Mostrar Campo de Busca'}
+                </button>
+                {mostrarInput && (
+                    <div className={styles.inputContainer}>
+                        <input 
+                            value={busca}
+                            type="text" 
+                            onChange={(ev) => setBusca(ev.target.value)}
+                            placeholder="Buscar médico pelo nome"
+                        />
+                    </div>
+                )}
             </div>
             <table className={styles.table}>
                 <thead className={styles.elementoTabela}>
