@@ -7,6 +7,13 @@
     }
 }
 
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
 .elementoTabela tr:hover td{
     animation: changeColor 0.7s forwards;
 }

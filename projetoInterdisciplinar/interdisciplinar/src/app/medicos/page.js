@@ -7,6 +7,7 @@ export default function listarMedicos() {
 
     const [medicos, setMedicos] = useState([])
     const [medicosSelecionados, setMedicoselecionados] = useState('')
+    const [busca, setBusca] = useState('')
 
     const getMedicos = async () => {
         try {
@@ -27,28 +28,42 @@ export default function listarMedicos() {
         getMedicos();
     }, [medicosSelecionados])
 
+    const medicosFiltrados = medicos.filter(medico => 
+        medico.nome.toLocaleLowerCase().startsWith(busca.toLocaleLowerCase())
+    );
+
     return(
-        <table className={styles.table}>
-            <thead className={styles.elementoTabela}>
-                <tr className={styles.tituloTable}>
-                    <th>ID</th>
-                    <th>NOME</th>
-                    <th>TELEFONE</th>
-                    <th>EMAIL</th>
-                    <th>ESPECIALIDADE</th>
-                </tr>
-            </thead>
-            <tbody className={styles.elementoTabela}>
-                {medicos.map((medico) => (
-                    <tr key={medico.id}>
-                        <td>{medico.id}</td>
-                        <td>{medico.nome}</td>
-                        <td>{medico.telefone}</td>
-                        <td>{medico.email}</td>
-                        <td>{medico.especialidade}</td>
+        <div>
+            <div className={styles.inputContainer}>
+                <input 
+                    value={busca}
+                    type="text" 
+                    onChange={(ev) => setBusca(ev.target.value)}
+                    placeholder="Buscar médico pelo nome"
+                />
+            </div>
+            <table className={styles.table}>
+                <thead className={styles.elementoTabela}>
+                    <tr className={styles.tituloTable}>
+                        <th>ID</th>
+                        <th>NOME</th>
+                        <th>TELEFONE</th>
+                        <th>EMAIL</th>
+                        <th>ESPECIALIDADE</th>
                     </tr>
-                ))}
-            </tbody>
-        </table>      
+                </thead>
+                <tbody className={styles.elementoTabela}>
+                    {medicosFiltrados.map((medico) => (
+                        <tr key={medico.id}>
+                            <td>{medico.id}</td>
+                            <td>{medico.nome}</td>
+                            <td>{medico.telefone}</td>
+                            <td>{medico.email}</td>
+                            <td>{medico.especialidade}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>      
+        </div>
     )
 }
