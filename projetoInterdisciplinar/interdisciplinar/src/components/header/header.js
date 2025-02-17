@@ -25,9 +25,9 @@ export default function Header() {
                         </ul>
                     </li>
                     <li>
-                        <Link href='#pacientes'>PACIENTES</Link>
+                        <Link href='/pacientes'>PACIENTES</Link>
                         <ul className={styles.submenu}>
-                            <li><Link href='#Listar'>Listar</Link></li>
+                            <li><Link href='/pacientes'>Listar</Link></li>
                             <li><Link href='#Adicionar'>Adicionar</Link></li>
                             <li><Link href='#Editar'>Editar</Link></li>
                             <li><Link href='#Excluir'>Excluir</Link></li>
