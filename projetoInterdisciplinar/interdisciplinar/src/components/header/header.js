@@ -34,9 +34,9 @@ export default function Header() {
                         </ul>
                     </li>
                     <li>
-                        <Link href='#agendamento'>AGENDAMENTO</Link>
+                        <Link href='/consultas'>AGENDAMENTO</Link>
                         <ul className={styles.submenu}>
-                            <li><Link href='#Listar'>Listar Consultas</Link></li>
+                            <li><Link href='/consultas'>Listar Consultas</Link></li>
                             <li><Link href='#Adicionar'>Agendar Consulta</Link></li>
                             <li><Link href='#Editar'>Editar Agendamento</Link></li>
                             <li><Link href='#Excluir'>Cancelar</Link></li>

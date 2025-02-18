@@ -30,7 +30,7 @@ export default function listarMedicos() {
     }, [medicosSelecionados])
 
     const medicosFiltrados = medicos.filter(medico => 
-        medico.nome.toLocaleLowerCase().startsWith(busca.toLocaleLowerCase())
+        medico.nome.toLocaleLowerCase().includes(busca.toLocaleLowerCase())
     );
 
     return(

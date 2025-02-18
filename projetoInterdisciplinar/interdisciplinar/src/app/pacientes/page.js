@@ -30,7 +30,7 @@ export default function listarPacientes() {
     }, [pacientesSelecionados])
 
     const pacientesFiltrados = pacientes.filter(paciente => 
-        paciente.nome.toLocaleLowerCase().startsWith(busca.toLocaleLowerCase())
+        paciente.nome.toLocaleLowerCase().includes(busca.toLocaleLowerCase())
     );
 
     return(

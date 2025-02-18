@@ -5,16 +5,6 @@ import styles from '../app/page.module.css';
 
 export default function Page() {
     return (
-        <div className={styles.container}>
-            <Header />
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-                className={styles.message}
-            >
-                <h1>Bem-vindo à Clínica!</h1>
-            </motion.div>
-        </div>
+        <p>Clínica</p>
     );
 }
