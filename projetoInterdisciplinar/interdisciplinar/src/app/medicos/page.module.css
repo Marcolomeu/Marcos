@@ -90,4 +90,8 @@
         overflow-x: auto;
         white-space: nowrap;
     }
+
+    .inputContainer input {
+        width: 50%;
+    }
 }
