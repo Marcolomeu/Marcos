@@ -6,7 +6,7 @@ import styles from '@/app/pacientes/page.module.css'
 export default function listarPacientes() {
 
     const [pacientes, setPacientes] = useState([])
-    const [pacientesSelecionados, ssetPacientesSelecionados] = useState('')
+    const [pacientesSelecionados, setPacientesSelecionados] = useState('')
     const [busca, setBusca] = useState('')
     const [mostrarInput, setMostrarInput] = useState(false)
 

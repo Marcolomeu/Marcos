@@ -5,6 +5,8 @@ import styles from '../app/page.module.css';
 
 export default function Page() {
     return (
-        <p>Clínica</p>
+      <div style={{ width: "100vw", height: "100vh" }}>
+        <p>Olá</p>
+      </div>
     );
-}
+  }

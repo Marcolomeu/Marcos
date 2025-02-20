@@ -58,28 +58,28 @@ export default function listarConsultas() {
                     </div>
                 )}
             </div>
-            <table className={styles.table}>
-                <thead className={styles.elementoTabela}>
-                    <tr className={styles.tituloTable}>
-                        <th>ID</th>
-                        <th>ESPECIALIDADE</th>
-                        <th>MÉDICO</th>
-                        <th>PACIENTE</th>
-                        <th>TIPO</th>
-                    </tr>
-                </thead>
-                <tbody className={styles.elementoTabela}>
-                    {consultasFiltradas.map((consulta) => (
-                        <tr key={consulta.id}>
-                            <td>{consulta.id}</td>
-                            <td>{consulta.especialidade}</td>
-                            <td>{consulta.medico}</td>
-                            <td>{consulta.paciente}</td>
-                            <td>{consulta.tipo}</td>
+                <table className={styles.table}>
+                    <thead className={styles.elementoTabela}>
+                        <tr className={styles.tituloTable}>
+                            <th>ID</th>
+                            <th>ESPECIALIDADE</th>
+                            <th>MÉDICO</th>
+                            <th>PACIENTE</th>
+                            <th>TIPO</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>      
+                    </thead>
+                    <tbody className={styles.elementoTabela}>
+                        {consultasFiltradas.map((consulta) => (
+                            <tr key={consulta.id}>
+                                <td>{consulta.id}</td>
+                                <td>{consulta.especialidade}</td>
+                                <td>{consulta.medico}</td>
+                                <td>{consulta.paciente}</td>
+                                <td>{consulta.tipo}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
         </div>
     );
 }

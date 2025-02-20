@@ -3,7 +3,7 @@
         background-color: #ffffff;
     }
     to {
-        background-color: #0056a2;
+        background-color: #007bff;
     }
 }
 
@@ -82,4 +82,12 @@
 
 .inputContainer input:focus {
     border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
