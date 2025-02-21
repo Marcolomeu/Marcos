@@ -89,12 +89,9 @@
         white-space: nowrap;
     }
 
-    .controls {
-        display: flex;
+    .inputContainer{
         flex-direction: column;
-    }
-
-    .inputContainer input{
-        width: 50%;
+        height: auto;
+        margin: auto;
     }
 }

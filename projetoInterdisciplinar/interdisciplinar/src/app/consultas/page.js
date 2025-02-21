@@ -1,7 +1,7 @@
 'use client';
 import Header from '@/components/header/header.js';
 import React, {useState, useEffect} from 'react';
-import styles from '@/app/medicos/page.module.css';
+import styles from './page.module.css';
 
 export default function listarConsultas() {
 
@@ -57,6 +57,9 @@ export default function listarConsultas() {
                         />
                     </div>
                 )}
+            </div>
+            <div>
+                
             </div>
                 <table className={styles.table}>
                     <thead className={styles.elementoTabela}>
